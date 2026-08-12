@@ -1,4 +1,4 @@
-name: Python Check
+name: Python Test
 
 on:
   push:
@@ -17,5 +17,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run application
-        run: python app.py
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest

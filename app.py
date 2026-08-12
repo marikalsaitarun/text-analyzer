@@ -1,11 +1,15 @@
-name = input("What is your name? ")
-age = input("How old are you? ")
+def calculate_future_age(age):
+    return int(age) + 5
 
-print(f"\nHello {name}!")
-print(f"You are {age} years old.")
-print("Welcome to Tarun's Python GitHub project!")
 
-future_age = int(age) + 5
+if __name__ == "__main__":
+    name = input("What is your name? ")
+    age = input("How old are you? ")
 
-print(f"In 5 years, you will be {future_age} years old.")
-print("This change was made on GitHub!")
+    print(f"\nHello {name}!")
+    print(f"You are {age} years old.")
+
+    future_age = calculate_future_age(age)
+
+    print(f"In 5 years, you will be {future_age} years old.")
+    print("Welcome to your first GitHub project!")
